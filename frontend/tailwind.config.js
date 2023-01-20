@@ -4,15 +4,12 @@ const plugin = require('tailwindcss/plugin');
 const primary = '#E30B13';
 
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './app/components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './app/components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    color: {
+    colors: {
       primary,
       black: colors.black,
-      while: color.while,
+      white: colors.white,
       gray: {
         300: '#d9dae8',
         500: '#999AA5',
@@ -27,6 +24,7 @@ module.exports = {
         700: '#F5C521',
       },
     },
+
     extend: {
       spacing: {
         0.5: '0.12rem',
@@ -75,6 +73,7 @@ module.exports = {
       },
     },
   },
+
   plugins: [
     plugin(({ addComponents, theme, addUtilities }) => {
       addComponents({
@@ -105,29 +104,30 @@ module.exports = {
           color: theme('colors.white'),
           boxShadow: theme('boxShadow.lg'),
         },
-      }),
-        addUtilities({
-          '.text-shadow': {
-            textShadow: '1px 1px rgba(0, 0, 0, 0.4)',
-          },
+      });
 
-          '.outline-border-none': {
-            outline: 'none',
-            border: 'none',
-          },
+      addUtilities({
+        '.text-shadow': {
+          textShadow: '1px 1px rgba(0, 0, 0, 0.4)',
+        },
 
-          '.flex-center-between': {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          },
+        '.outline-border-none': {
+          outline: 'none',
+          border: 'none',
+        },
 
-          '.image-like-bg': {
-            objectPosition: 'center',
-            objectFit: 'cover',
-            pointerEvents: 'none',
-          },
-        });
+        '.flex-center-between': {
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        },
+
+        '.image-like-bg': {
+          objectPosition: 'center',
+          objectFit: 'cover',
+          pointerEvents: 'none',
+        },
+      });
     }),
   ],
 };
