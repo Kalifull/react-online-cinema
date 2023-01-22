@@ -1,7 +1,7 @@
-import styles from './Layout.module.scss';
-
 import Navigation from './Navigation/Navigation';
 import Sidebar from './Sidebar/Sidebar';
+
+import styles from './Layout.module.scss';
 
 const Layout: React.FC = ({ children }) => {
   return (

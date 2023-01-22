@@ -9,19 +9,18 @@
   "trailingComma": "es5",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
-    "^@/screens/(.*)$",
     "^@/components/(.*)$",
+    "^@/screens/(.*)$",
     "^@/ui/(.*)$",
     "^@/hooks/(.*)$",
     "^@/shared/(.*)$",
-    "^@/store/(.*)$",
     "^@/services/(.*)$",
+    "^@/assets/(.*)$",
     "^@/utils/(.*)$",
     "^@/configs/(.*)$",
-    "^@/assets/(.*)$",
-    "(.scss)$",
-    "^../(.*)",
-    "^./(.*)"
+    "^@/store/(.*)$",
+    "^./(.*.interface)",
+    "(.scss)$"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
