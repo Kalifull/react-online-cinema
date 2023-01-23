@@ -17,9 +17,12 @@
     "^@/services/(.*)$",
     "^@/assets/(.*)$",
     "^@/utils/(.*)$",
-    "^@/configs/(.*)$",
+    "^@/config/(.*)$",
     "^@/store/(.*)$",
     "^./(.*.interface)",
+    "^../(.*)",
+    "^../(.*.interface)",
+    "^./(.*.types)",
     "(.scss)$"
   ],
   "importOrderSeparation": true,
