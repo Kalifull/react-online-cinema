@@ -7,7 +7,9 @@ export const clearText = (_string: string, limit: null | number = null): string 
       ''
     );
 
-  if (limit) result = `${result.slice(0, limit)}...`;
+  if (limit) {
+    result = `${result.slice(0, limit)}...`;
+  }
 
   return result;
 };
