@@ -1,5 +1,6 @@
 import MenuItem from './MenuItem';
-import AuthItems from './auth/AuthItems';
+
+import AuthItems from '../auth/AuthItems';
 
 import { IMenu } from './menu.interface';
 

@@ -19,8 +19,9 @@
     "^@/utils/(.*)$",
     "^@/config/(.*)$",
     "^@/store/(.*)$",
-    "^./(.*.interface)",
+    "^./(use*)",
     "^../(.*)",
+    "^./(.*.interface)",
     "^../(.*.interface)",
     "^./(.*.types)",
     "(.scss)$"

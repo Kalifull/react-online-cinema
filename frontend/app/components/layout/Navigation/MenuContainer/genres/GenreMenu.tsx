@@ -1,13 +1,13 @@
-import SkeletonLoader from '@/ui/SkeletonLoader';
-
-import Menu from '../Menu';
+import SkeletonLoader from '@/components/ui/skeleton-loader/SkeletonLoader';
 
 import { usePopularGenres } from './usePopularGenres';
+
+import Menu from '../Menu/Menu';
 
 const GenreMenu: React.FC = () => {
   const { isLoading, data } = usePopularGenres();
 
-  return !isLoading ? (
+  return isLoading ? (
     <div className="mx-11 mb-6">
       <SkeletonLoader count={5} className="h-7 mt-6" />
     </div>

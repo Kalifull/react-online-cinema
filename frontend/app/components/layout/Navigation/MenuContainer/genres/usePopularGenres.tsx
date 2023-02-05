@@ -1,10 +1,10 @@
 import { useQuery } from 'react-query';
 
-import { GenreService } from '@/services/genre.service';
+import { GenreService } from '@/services/genre/genre.service';
 
 import { getGenreUrl } from '@/config/url.config';
 
-import { IMenuItem } from '../menu.interface';
+import { IMenuItem } from '../Menu/menu.interface';
 
 export const usePopularGenres = () => {
   const queryData = useQuery('popular genres menu', () => GenreService.getPopularGenres(), {
