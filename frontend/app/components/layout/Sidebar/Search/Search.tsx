@@ -1,8 +1,8 @@
 import SearchField from '@/ui/search-field/SearchField';
 
-import SearchList from './SearchList/SearchList';
-
 import { useSearch } from './useSearch';
+
+import SearchList from './SearchList/SearchList';
 
 import styles from './Search.module.scss';
 

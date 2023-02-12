@@ -24,7 +24,8 @@
     "^./(.*.interface)",
     "^../(.*.interface)",
     "^./(.*.types)",
-    "(.scss)$"
+    "^./(.*/)",
+    "(.*.module.scss)$"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
