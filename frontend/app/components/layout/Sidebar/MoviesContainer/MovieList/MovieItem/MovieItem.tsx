@@ -43,4 +43,5 @@ const MovieItem: React.FC<{ movie: IMovie }> = ({ movie }) => {
     </div>
   );
 };
+
 export default MovieItem;

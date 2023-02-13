@@ -19,4 +19,5 @@ const MovieList: React.FC<IMovieList> = ({ link, movies, title }) => {
     </div>
   );
 };
+
 export default MovieList;

@@ -20,8 +20,16 @@
       @apply rounded-image;
     }
 
-    > span {
-      @apply ml-3 text-white truncate;
+    .info {
+      @apply ml-3 truncate;
+
+      .title {
+        @apply text-white text-lg font-medium truncate mb-6;
+      }
+
+      .year {
+        @apply text-gray-500 text-sm;
+      }
 
       &:last-child {
         width: 70%;

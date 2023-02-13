@@ -3,11 +3,12 @@ import MainProvider from 'providers/MainProvider';
 
 import '../styles/globals.scss';
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <MainProvider>
       <Component {...pageProps} />
     </MainProvider>
   );
 };
+
 export default App;

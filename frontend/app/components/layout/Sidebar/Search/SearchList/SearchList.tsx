@@ -21,7 +21,10 @@ const SearchList: React.FC<{ movies: IMovie[] }> = ({ movies }) => {
                 alt={movie.title}
                 draggable="false"
               />
-              <span>{movie.title}</span>
+              <div className={styles.info}>
+                <div className={styles.title}>{movie.title}</div>
+                <div className={styles.year}>{movie.parameters.year}</div>
+              </div>
             </a>
           </Link>
         ))
@@ -31,4 +34,5 @@ const SearchList: React.FC<{ movies: IMovie[] }> = ({ movies }) => {
     </div>
   );
 };
+
 export default SearchList;

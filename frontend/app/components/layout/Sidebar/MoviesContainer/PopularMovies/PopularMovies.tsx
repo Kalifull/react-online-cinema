@@ -19,4 +19,5 @@ const PopularMovies: React.FC = () => {
     <MovieList link="/trending" movies={popularMovies || []} title="Popular Movies" />
   );
 };
+
 export default PopularMovies;

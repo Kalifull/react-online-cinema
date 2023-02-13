@@ -1,7 +1,7 @@
+import { TypeLayoutProps } from './layout.types';
+
 import Navigation from './Navigation/Navigation';
 import Sidebar from './Sidebar/Sidebar';
-
-import { TypeLayoutProps } from './layout.types';
 
 import styles from './Layout.module.scss';
 
