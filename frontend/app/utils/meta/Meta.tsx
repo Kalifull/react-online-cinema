@@ -5,9 +5,9 @@ import logoImage from '@/assets/images/logo.svg';
 
 import { makeTitleMerge, siteName } from '@/config/seo.config';
 
-import { ISeo } from './meta.interface';
-
 import { clearText } from '../string/clearText';
+
+import { ISeo } from './meta.interface';
 
 const Meta: React.FC<ISeo> = ({ title, description, image, children }) => {
   const { asPath } = useRouter();
@@ -36,4 +36,5 @@ const Meta: React.FC<ISeo> = ({ title, description, image, children }) => {
     </>
   );
 };
+
 export default Meta;
