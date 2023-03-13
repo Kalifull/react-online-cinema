@@ -26,4 +26,5 @@ const SearchField: React.FC<ISearchField> = ({ searchInput, handleClear }) => {
     </div>
   );
 };
+
 export default SearchField;

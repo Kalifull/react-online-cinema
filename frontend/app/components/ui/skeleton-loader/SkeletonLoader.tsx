@@ -12,4 +12,5 @@ const SkeletonLoader: React.FC<SkeletonProps> = ({ className, ...rest }) => {
     />
   );
 };
+
 export default SkeletonLoader;

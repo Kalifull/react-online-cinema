@@ -9,4 +9,5 @@ const Heading: React.FC<IHeading> = ({ title, className }) => {
 
   return <h1 className={headingClasses}>{title}</h1>;
 };
+
 export default Heading;
